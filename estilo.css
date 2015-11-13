@@ -1,0 +1,343 @@
+/**************************************************************************************************/
+/* Estilo general */
+/**************************************************************************************************/
+html{
+	overflow-x: hidden;
+	height: 100%;
+	background-color: #EEEEE0;
+	font: small Arial, Helvetica, Verdana, sans-serif;
+}
+
+body{
+	height: 100%;
+	background-color: #EEEEE0;
+	font: small Arial, Helvetica, Verdana, sans-serif;
+}
+
+header {
+	width: 100%;
+	background: -webkit-linear-gradient(left, white , #CCCC99); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, white, #CCCC99); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, white, #CCCC99); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, white , #CCCC99); /* Standard syntax */
+}
+
+#header {
+	margin-top: 5px;
+	display: table;
+	width: 100%;
+	background-color: #666633;
+	height: 1%;  /* es para eliminar bug en IE en donde aparece y desaparece la linea */
+}
+
+#header div:nth-child(1){
+	display: table-cell;
+	width: 90%;
+}
+
+#header div:nth-child(2){
+	display: table-cell;
+	width: 10%;
+}
+
+#leyenda {
+	font-weight: bold;
+	font-size:large;
+	color: white;
+	font-style: italic;
+	margin: 0 0 0 20px;
+}
+
+.wrapper {
+	background-color: #ffffff;
+	position: relative;
+	padding: 10px;
+	min-width: 700px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 10% -60px;
+}
+
+footer, .push {
+    height: 48px;
+}
+
+footer {
+	padding: 0 10px;
+	margin-right: 10%; 
+	margin-left: 10%;
+	min-width: 700px;
+	position: relative;
+}
+
+footer div {
+	background-color: #666633;
+	color:white;
+}
+
+footer p {
+	margin: 0 0 0 10px;
+}
+
+#contenido {
+	border: 3px solid #b9d2e3;
+	background-color: white;
+	color: black;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+}
+
+#contenido .temas{
+	margin: 0px 20px 10px 30px;
+}
+
+#contenido .temas h2 {
+	color: #245185;
+	padding-bottom: 0.2em;
+	margin-top: 10px;
+	border-bottom: 2px solid #b9d2e3;
+	font-size: 200%;
+}
+
+#contenido .temas ul.principal {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#contenido .temas  h3 {
+	font-size: 130%;
+	text-decoration: underline;
+	color: #245185;
+}
+
+#contenido .temas p {
+	color: #666666;
+}
+
+/********** esto no se va a borrar.  Lo dejare por si hay que hacer alguna liga
+#contenido .temas p.mas{
+	margin-top: 0;
+	text-align: right;
+	}
+#contenido .temas p.mas a:link, #content .temas p.mas a:visited {
+	background-image: url(img/more-bullet.gif);
+	background-repeat: no-repeat;
+	background-position: center left;
+	padding-left: 14px;
+	font-size: 90%;
+	color: #1e4c82;
+	}      **********************/
+
+/********** menu ***********/
+ul, li, nav
+{
+
+    padding:0;
+    margin:0;
+}
+
+nav{
+	background-color: #CC9;
+}
+
+nav h4{
+	margin: 0;
+}
+
+#tmenu, #tconf{
+	color: white;
+}
+
+#tmenu{
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+#tconf{
+	padding: 10px;
+}
+
+
+#menu {
+    position:relative;
+    z-index:2;
+}
+
+.parent-menu {
+    background-color: #CC9;
+    min-width:200px;
+    float:left;
+}
+
+#menu ul
+{
+    list-style-type:none;
+}
+
+#menu ul li a
+{
+	cursor: pointer;
+    padding:10px 15px;
+    display:block;
+    color:#903;
+    text-decoration:none;
+}
+
+#menu ul li a:hover
+{
+	color:#FFF;
+    background-color:#663;
+}
+
+#menu ul li:hover > ul {
+
+    left: 200px;
+
+}
+
+#menu ul li:hover > ul {
+	
+	display: block;
+
+}
+
+#menu ul ul {
+
+	display: none;
+
+    position: absolute;
+
+    background-color: #663;
+
+    top: 0;
+
+    /*left: -200px;*/
+
+    min-width: 200px;
+
+    z-index: -1;
+
+    /*height: 100%;*/
+
+}
+
+#menu ul li ul li a
+{
+
+    padding:10px 15px;
+    display:block;
+    color:#FFF;
+    text-decoration:none;
+}
+
+#menu ul li > ul li a:hover
+
+{
+	color:#903;
+    background-color:#CC9;
+
+}
+
+/**************************************************************************************************/
+/* Registro del usuario (login) */
+/**************************************************************************************************/
+#registro {
+	width: 60%;
+	margin: 15% auto;
+	color: black;
+	background-color: white;
+	padding: 0 30px 15px 30px;
+	background-color: white;
+	color: black;
+	border: 1px solid #b9d2e3;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+}
+
+@media (min-width: 1100px) {
+    #registro {
+		width: 50%;
+		margin: 15% auto;
+		color: black;
+		background-color: white;
+		padding: 0 30px 15px 30px;
+		background-color: white;
+		color: black;
+		border: 1px solid #b9d2e3;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		-o-border-radius:10px;
+		-ms-border-radius:10px;
+		border-radius:10px;
+	}
+}
+
+@media (min-width: 1500px) {
+    #registro {
+		width: 40%;
+		margin: 10% auto;
+		color: black;
+		background-color: white;
+		padding: 0 30px 15px 30px;
+		background-color: white;
+		color: black;
+		border: 1px solid #b9d2e3;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		-o-border-radius:10px;
+		-ms-border-radius:10px;
+		border-radius:10px;
+	}
+}
+
+/************* mesaje de error **********************/
+#pantallaerror{
+	padding: 15% 5%;
+}
+
+#mensajerror{
+	display: block;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove;
+}
+
+#pantallaerror p{
+	font-size: 130%;
+	font-weight:bold;
+}
+
+/************* mesaje de confirmacion **********************/
+#confirma{
+	margin:2%;
+	padding:3%; 
+}
+
+#confirma p{
+	font-size: 130%;
+	font-weight:normal;
+}
+
+/***********************************/
+
+.ntbn{
+	width: 75px;
+}
+
+.ntext{
+	width: 250px;
+}
+
+.btext{
+	width: 350px;
+}

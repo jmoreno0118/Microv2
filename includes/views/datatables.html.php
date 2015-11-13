@@ -1,0 +1,2 @@
+<link rel="stylesheet" href="<?php echo url.libs; ?>DataTables-1.10.10/media/css/jquery.dataTables.css">
+<script type="text/javascript" src="<?php echo url.libs; ?>DataTables-1.10.10/media/js/jquery.dataTables.js"></script>
